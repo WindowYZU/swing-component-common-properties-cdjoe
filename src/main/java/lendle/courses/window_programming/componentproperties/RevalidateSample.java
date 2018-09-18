@@ -47,17 +47,17 @@ public class RevalidateSample extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 290, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 223, Short.MAX_VALUE)
                 .addComponent(jButton2)
-                .addContainerGap())
+                .addGap(77, 77, 77))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 296, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(263, Short.MAX_VALUE)
+                .addGap(94, 94, 94)
                 .addComponent(jButton2)
-                .addContainerGap())
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -68,6 +68,8 @@ public class RevalidateSample extends javax.swing.JFrame {
         JButton button=new JButton("1");
         jPanel1.add(button);
         //試試看，應該加入 repaint? invalidate? revalidate?
+        jPanel1.revalidate();
+        
         /////////////////////////////////////////////////
     }//GEN-LAST:event_jButton2ActionPerformed
 
